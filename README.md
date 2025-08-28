@@ -37,6 +37,13 @@ Before setting up the project, ensure you have:
 - 📡 **Mosquitto** (optional, for MQTT streaming)  
 
 ---
+## Images
+
+![Alt Text](https://github.com/ranasaurabh191/Predictive-Maintenance-PdM-Pipeline/blob/main/Screenshot%20(41).png)
+-------------------------------
+![Alt Text](https://github.com/ranasaurabh191/Predictive-Maintenance-PdM-Pipeline/blob/main/Screenshot%20(42).png)
+-------------------------------
+![Alt Text](https://github.com/ranasaurabh191/Predictive-Maintenance-PdM-Pipeline/blob/main/Screenshot%202025-08-28%20202804.png)
 
 
 ## Project Structure
@@ -189,6 +196,7 @@ Push to the branch: git push origin feature/new-feature.
 Open a Pull Request.
 
 ### Inspired by real-world PdM applications in industrial asset management.
+
 
 
 
