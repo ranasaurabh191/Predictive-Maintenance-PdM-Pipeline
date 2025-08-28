@@ -118,7 +118,7 @@ Before setting up the project, ensure you have:
     bashmosquitto -v
     Download Mosquitto from mosquitto.org if not already installed.
 ----------------------------
-##🚀 Usage
+## 🚀 Usage
     1. Generate and Process Data
     Generate synthetic sensor data and process it for model training:
     bashpython data_ingest/simulate_ingestion.py
@@ -189,6 +189,7 @@ Push to the branch: git push origin feature/new-feature.
 Open a Pull Request.
 
 ### Inspired by real-world PdM applications in industrial asset management.
+
 
 
 
