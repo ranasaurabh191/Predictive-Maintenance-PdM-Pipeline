@@ -73,51 +73,50 @@ Before setting up the project, ensure you have:
     -└── README.md               # This file
 
 ## ⚙️ Prerequisites
--Before setting up the project, ensure you have the following installed:
-
--🐍 Python 3.10 or 3.11 (recommended for compatibility)
--📦 pip (latest version, included with Python)
--🐙 Git (optional, for version control and cloning the repository)
--🐳 Docker (optional, for containerized deployment)
--📡 Mosquitto (optional, for MQTT-based IoT streaming)
+    -Before setting up the project, ensure you have the following installed:
+    
+    -🐍 Python 3.10 or 3.11 (recommended for compatibility)
+    -📦 pip (latest version, included with Python)
+    -🐙 Git (optional, for version control and cloning the repository)
+    -🐳 Docker (optional, for containerized deployment)
+    -📡 Mosquitto (optional, for MQTT-based IoT streaming)
 
 ## 📥 Installation
-# 1. Clone the Repository
--Clone this repository to your local machine:
--bashgit clone https://github.com/your-username/pdmp_project.git
--cd pdmp_project
--Note: Replace your-username with your GitHub username or the repository URL.
-# 2. Set Up a Virtual Environment
--Create and activate a virtual environment to isolate dependencies:
--bashpython -m venv venv
--# On Windows
--venv\Scripts\activate
--# On Linux/Mac
--source venv/bin/activate
-# 3. Install Dependencies
--Install the required Python packages listed in requirements.txt:
--bashpip install -r requirements.txt
--The requirements.txt includes:
-
-  numpy==2.2.6
-  pandas==2.3.2
-  torch==2.8.0
-  scikit-learn==1.7.1
-  joblib==1.5.2
-  fastapi==0.116.1
-  uvicorn==0.35.0
-  streamlit==1.49.0
-  matplotlib==3.10.5
-  paho-mqtt==2.1.0
-  shap==0.48.0
-  requests==2.32.5
-  pillow==11.3.0
-  typing-extensions==4.15.0
+    # 1. Clone the Repository
+    -Clone this repository to your local machine:
+    -bashgit clone https://github.com/your-username/pdmp_project.git
+    -cd pdmp_project
+    -Note: Replace your-username with your GitHub username or the repository URL.
+    # 2. Set Up a Virtual Environment
+    -Create and activate a virtual environment to isolate dependencies:
+    -bashpython -m venv venv
+    -# On Windows
+    -venv\Scripts\activate
+    -# On Linux/Mac
+    -source venv/bin/activate
+    # 3. Install Dependencies
+    -Install the required Python packages listed in requirements.txt:
+    -bashpip install -r requirements.txt
+    -The requirements.txt includes:
+      numpy==2.2.6
+      pandas==2.3.2
+      torch==2.8.0
+      scikit-learn==1.7.1
+      joblib==1.5.2
+      fastapi==0.116.1
+      uvicorn==0.35.0
+      streamlit==1.49.0
+      matplotlib==3.10.5
+      paho-mqtt==2.1.0
+      shap==0.48.0
+      requests==2.32.5
+      pillow==11.3.0
+      typing-extensions==4.15.0
 
 # 4. (Optional) Install Mosquitto for MQTT
-To enable MQTT streaming, install Mosquitto and verify it’s running:
-bashmosquitto -v
-Download Mosquitto from mosquitto.org if not already installed.
+    To enable MQTT streaming, install Mosquitto and verify it’s running:
+    bashmosquitto -v
+    Download Mosquitto from mosquitto.org if not already installed.
 ----------------------------
 ##🚀 Usage
     1. Generate and Process Data
@@ -190,5 +189,6 @@ Push to the branch: git push origin feature/new-feature.
 Open a Pull Request.
 
 ### Inspired by real-world PdM applications in industrial asset management.
+
 
 
