@@ -41,36 +41,36 @@ Before setting up the project, ensure you have:
 
 ## Project Structure
 
-textpdmp_project/
--│
--├── data/
--│   ├── raw/                # Raw synthetic sensor data (e.g., synthetic_sensor_data.csv)
--│   └── processed/          # Processed data (e.g., features.csv, sequences.npy, scaler.joblib)
--│
--├── models/                 # Model definitions and training scripts
--│   ├── lstm_ae.py          # LSTM Autoencoder model architecture
--│   ├── train.py            # Model training and threshold calculation
--│
--├── data_ingest/            # Data generation and ingestion
--│   ├── simulate_ingestion.py  # Script to generate synthetic data
--│
--├── serving/                # API serving
--│   ├── serve_fastapi.py    # FastAPI server implementation
--│
--├── dashboard.py            # Streamlit dashboard for visualization
--├── test_api.py             # Script to test the API endpoint
--├── monitoring/             # Custom monitoring scripts and outputs
--│   ├── custom_monitor.py   # Drift detection and logging
--│   ├── custom_monitor.log  # Monitoring logs
--│   ├── temp_trend.png      # Temperature trend visualization
--│   ├── monitor_stats.json  # Statistical monitoring data
--│
--├── notebooks/              # Jupyter notebooks for exploratory data analysis
--│   ├── EDA_and_baselines.ipynb  # Data preprocessing and baseline analysis
--│
--├── Dockerfile              # Docker configuration file
--├── requirements.txt        # List of Python dependencies
--└── README.md               # This file
+    textpdmp_project/
+    -│
+    -├── data/
+    -│   ├── raw/                # Raw synthetic sensor data (e.g., synthetic_sensor_data.csv)
+    -│   └── processed/          # Processed data (e.g., features.csv, sequences.npy, scaler.joblib)
+    -│
+    -├── models/                 # Model definitions and training scripts
+    -│   ├── lstm_ae.py          # LSTM Autoencoder model architecture
+    -│   ├── train.py            # Model training and threshold calculation
+    -│
+    -├── data_ingest/            # Data generation and ingestion
+    -│   ├── simulate_ingestion.py  # Script to generate synthetic data
+    -│
+    -├── serving/                # API serving
+    -│   ├── serve_fastapi.py    # FastAPI server implementation
+    -│
+    -├── dashboard.py            # Streamlit dashboard for visualization
+    -├── test_api.py             # Script to test the API endpoint
+    -├── monitoring/             # Custom monitoring scripts and outputs
+    -│   ├── custom_monitor.py   # Drift detection and logging
+    -│   ├── custom_monitor.log  # Monitoring logs
+    -│   ├── temp_trend.png      # Temperature trend visualization
+    -│   ├── monitor_stats.json  # Statistical monitoring data
+    -│
+    -├── notebooks/              # Jupyter notebooks for exploratory data analysis
+    -│   ├── EDA_and_baselines.ipynb  # Data preprocessing and baseline analysis
+    -│
+    -├── Dockerfile              # Docker configuration file
+    -├── requirements.txt        # List of Python dependencies
+    -└── README.md               # This file
 
 ## ⚙️ Prerequisites
 -Before setting up the project, ensure you have the following installed:
@@ -190,4 +190,5 @@ Push to the branch: git push origin feature/new-feature.
 Open a Pull Request.
 
 ### Inspired by real-world PdM applications in industrial asset management.
+
 
