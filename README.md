@@ -38,7 +38,7 @@ Before setting up the project, ensure you have:
 - 📡 **Mosquitto** (optional, for MQTT streaming)  
 
 ---
-## Images
+## ✨ Images
 
 ![Alt Text](https://github.com/ranasaurabh191/Predictive-Maintenance-PdM-Pipeline/blob/main/Screenshot%20(41).png)
 -------------------------------
@@ -47,7 +47,7 @@ Before setting up the project, ensure you have:
 ![Alt Text](https://github.com/ranasaurabh191/Predictive-Maintenance-PdM-Pipeline/blob/main/Screenshot%202025-08-28%20202804.png)
 
 
-## Project Structure
+## ⚙️ Project Structure
 
     textpdmp_project/
     │
@@ -83,23 +83,23 @@ Before setting up the project, ensure you have:
 
 ## 📥 Installation
 
-1.Clone the Repository
+1. Clone the Repository
 
 - Clone this repository to your local machine:
 - git clone https://github.com/your-username/pdmp_project.git
 - cd pdmp_project
 - Note: Replace your-username with your GitHub username or the repository URL.
 
-2.Set Up a Virtual Environment
+2. Set Up a Virtual Environment
 
 - Create and activate a virtual environment to isolate dependencies:
 - bashpython -m venv venv
-- # On Windows
+- #On Windows
 - venv\Scripts\activate
-- # On Linux/Mac
+- #On Linux/Mac
 - source venv/bin/activate
 
-3.Install Dependencies
+3. Install Dependencies
 
 - Install the required Python packages listed in requirements.txt:
 - bashpip install -r requirements.txt
@@ -119,7 +119,7 @@ Before setting up the project, ensure you have:
       pillow==11.3.0
       typing-extensions==4.15.0
 
-4.(Optional) Install Mosquitto for MQTT
+4. (Optional) Install Mosquitto for MQTT
 
 - To enable MQTT streaming, install Mosquitto and verify it’s running:
 - bashmosquitto -v
@@ -128,20 +128,20 @@ Before setting up the project, ensure you have:
 
 ## 🚀 Usage
 
-1.Generate and Process Data
+1. Generate and Process Data
 
 - Generate synthetic sensor data and process it for model training:
 - bashpython data_ingest/simulate_ingestion.py
 - jupyter notebook notebooks/EDA_and_baselines.ipynb
 - Run all cells in the notebook to create features.csv and sequences.npy.
 
-2.Train the Model
+2. Train the Model
 
 - Train the LSTM Autoencoder and set the anomaly threshold:
 - bashpython models/train.py
 - This generates lstm_ae_model.pth, threshold.txt, and model.onnx.
 
-3.Evaluate the Model
+3. Evaluate the Model
 
 - Assess the model’s performance on the test dataset:
 - bashpython evaluate_model.py
@@ -152,20 +152,20 @@ Before setting up the project, ensure you have:
 - Threshold: ~0.7363
 - Anomaly indices: [756 757 ... 814]
 
-4.Serve Predictions (API)
+4. Serve Predictions (API)
 
 - Start the FastAPI server and test the endpoint:
 - bashpython serving/serve_fastapi.py
 - python test_api.py
 - Expected: Status Code: 200 from the test script.
 
-5.Launch Dashboard
+5. Launch Dashboard
 
 - Run the Streamlit dashboard to visualize results:
 - bashstreamlit run dashboard.py
 - 👉 Visit http://localhost:8501 to interact with the dashboard.
 
-6.Run Monitoring
+6. Run Monitoring
 
 - Monitor data drift and generate visualizations:
 - bashpython monitoring/custom_monitor.py
@@ -174,14 +174,14 @@ Before setting up the project, ensure you have:
 - 📈 temp_trend.png: Temperature trend visualization.
 - 📑 monitor_stats.json: Detailed statistical data.  
 
-7.IoT Streaming (MQTT)
+7. IoT Streaming (MQTT)
 
 - Enable real-time data streaming with MQTT:
 - bashmosquitto -v
 - python data_ingest/simulate_ingestion.py
 - The dashboard will automatically subscribe and display anomalies.
 
-8.Deploy with Docker
+8. Deploy with Docker
 
 - Build and run the Docker container for deployment:
 - bashdocker build -t pdmp_app .
