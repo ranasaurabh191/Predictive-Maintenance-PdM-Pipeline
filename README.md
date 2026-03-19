@@ -215,5 +215,9 @@ Commit your changes: git commit -m 'Add new feature'.
 Push to the branch: git push origin feature/new-feature.
 Open a Pull Request.
 
+### Inspired by real-world PdM applications in industrial asset management.
 
-## Inspired by real-world PdM applications in industrial asset management.
+
+
+
+
