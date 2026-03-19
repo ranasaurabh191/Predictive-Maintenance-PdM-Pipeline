@@ -14,8 +14,8 @@ data = {
 }
 df = pd.DataFrame(data)
 
-anomaly_indices = np.random.choice(10000, size=500, replace=False)
-df.loc[anomaly_indices, 'temperature'] *= 1.5
-df.loc[anomaly_indices, 'vibration'] *= 2.0
-df.to_csv("data/raw/synthetic_sensor_data.csv", index=False)
+anomaly_indices = np.random.choice(10000, size=500, replace=False) # Introduce anomalies
+df.loc[anomaly_indices, 'temperature'] *= 1.5 # Spike in temperature
+df.loc[anomaly_indices, 'vibration'] *= 2.0 # Spike in vibration
+df.to_csv("data/raw/synthetic_sensor_data.csv", index=False) 
 print("Synthetic data with anomalies saved")    
